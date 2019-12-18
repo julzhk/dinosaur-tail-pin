@@ -11,8 +11,10 @@ You'll need:
 
 * A Raspberry Pi with SenseHat
 * An external speaker (connected via the phones jack)
-* A Magnet (on the pin)
+* A Magnet (on the pin) A good excuse to get a super Neodymium magnet!  
 * A dinosaur picture (to pin a tail on) 
+
+Put the Raspberry Pi under the tail of the dinosaur with the Sense Hat directly behind the picture. 
 
 Notes for a beginner coder
 =
@@ -44,8 +46,10 @@ you can see, it makes this calculation really straightforwards.
 
 The Rest
 ==
-The rest of the program is just an infinite loop. If the reading from the magnetometer is much greater than 
-the rolling average. emit a random roar. If it's a good bit smaller, then stop the roar.
+The rest of the program is an infinite loop: wait for a short time (python's 'sleep' function).
+If the reading from the magnetometer is much greater than the rolling average over the previous few seconds,
+ emit a roar chosen randomly from the list of mp3 sound files. If the magnetometer reading is a good bit smaller than
+ the rolling average then stop the roar.
 
 The reason a rolling average is used (and not a hard-coded, or baseline reading) is that the reading changes over time
 I assume it's due to the circuits getting warmer? No real idea, but the solution is the measure a degree of change, 
