@@ -10,7 +10,6 @@ from sense_hat import SenseHat
     for the dinosaur sounds
 """
 
-
 class SoundPlayer(object):
     sound_files = [
         'TRex.mp3', 'Dragon.mp3', 'Pterodactyl.mp3', 'TRex.mp3', 'Zombie.mp3', 'Halloween.mp3', 'Raptor.mp3', 'TRexRoar.mp3'
